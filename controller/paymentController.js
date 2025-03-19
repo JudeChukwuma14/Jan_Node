@@ -29,7 +29,7 @@ const payment = async (req, res) => {
             userId: currentUser._id,
             currency: "NGN",
             amount: totalAmount * 100,
-            callback_url: "http://localhost:5005/callback"
+            callback_url: "https://jan-node.onrender.com/callback"
         }
 
         const paymentResponse = await initializePayment(transactionData)
